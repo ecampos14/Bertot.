@@ -16,10 +16,10 @@ Funcionais:
 
 
 
-Caso de uso:
+Card:
 <br>
 
-<img src = "" width="680" height="511">
+<img src = "https://user-images.githubusercontent.com/88864112/172259150-87a08fd7-e018-4c39-ae16-30e2bb0aad70.png" width="680" height="511">
 <br>
 
 
