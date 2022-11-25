@@ -9,7 +9,8 @@ const listFavourites = document.querySelector('.js_listFavourites');
 const resetAllFavs = document.querySelector('.js_resetAllFavs');
 
 
-
 let dataAnime = [];
 
+
+let dataAnime = [];
 let favouritesAnime = [];

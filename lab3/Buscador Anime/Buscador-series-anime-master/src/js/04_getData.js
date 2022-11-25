@@ -1,6 +1,6 @@
 'use strict';
 
-//Función para conseguir los datos del API
+
 
 function getAnimeData() {
   const userInput = inputUser.value;

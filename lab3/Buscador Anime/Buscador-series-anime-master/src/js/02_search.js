@@ -1,6 +1,6 @@
 'use strict';
 
-//Función para pintar en el html la lista de resultados
+
 
 function renderAnime() {
   let html = '';
@@ -29,13 +29,12 @@ function renderAnime() {
   listenerAnimes();
 }
 
-//Función manejadora del evento click de buscar
+
 
 function handleClick(event) {
   event.preventDefault();
   getAnimeData();
 }
 
-//Evento para escuchar el click en el botón de buscar
 
 btnSearch.addEventListener('click', handleClick);
