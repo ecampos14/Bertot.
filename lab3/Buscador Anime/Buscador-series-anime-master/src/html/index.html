@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/9a646766b9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>Buscador de Anime</title>
+  </head>
+  <header>
+  <div>
+  <body class="body">
+    <main class="main">
+      <h1 class="main__title"> Buscador de <span>animes</span></h1>
+      <form action="" class="main__form">
+        <label for="titleAnime">
+          <input
+            type="text"
+            class="inputUser js_inputUser"
+            name="titleAnime"
+            id="titleAnime"
+            placeholder="Ex: My Hero Academia"
+          />
+        </label>
+        <label for="search">
+          <input
+            type="button"
+            class="js_btnSearch searchBtn"
+            value="Buscar"
+            name="search"
+            id="search"
+          />
+        </label>
+        <button class="main__buttonReset js_btnReset">Reset</button>
+      </form>
+      <main class="main"></main>
+    </div>
+    </header>
+      <div class="main__resAndFav">
+        <section class="favorites">
+          <h3 class="titleFav">Favoritos</h3>
+          <ul class="ulFavorites js_listFavourites"></ul>
+          <button class="resetAllFavs js_resetAllFavs">
+            Excluir favoritos
+          </button>
+        </section>
+
+        <section class="results">
+          <h3 class="titleResults">Resultados</h3>
+          <ul class="ulResults js_listResults"></ul>
+        </section>
+      </div>
+    </main>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+    <div id="rodape" >
+      <img src="https://user-images.githubusercontent.com/88864112/203458681-4aac01d2-6932-42ac-91ed-7113abcbca2d.png" height="150" width="350"/> 
+  </div>
+</html>
