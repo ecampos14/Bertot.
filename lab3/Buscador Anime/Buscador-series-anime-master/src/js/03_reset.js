@@ -1,5 +1,5 @@
 'use strict';
-//Evento para eliminar el input de la usuaria y los resultados de búsqueda
+
 
 function handleClickReset() {
   listResults.innerHTML = '';
@@ -8,7 +8,7 @@ function handleClickReset() {
 
 btnReset.addEventListener('click', handleClickReset);
 
-//Evento para elminar toda la lista de favoritos
+
 
 function handleResetAllFavs() {
   localStorage.clear();
