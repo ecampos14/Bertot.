@@ -1,6 +1,6 @@
 'use strict';
 
-//Función que pinta la lista de favoritos
+
 
 function renderFavourites() {
   let html = '';
@@ -18,7 +18,6 @@ function renderFavourites() {
   listFavourites.innerHTML = html;
 }
 
-//Función manejadora del click de cada li
 
 function handleClickFavourite(event) {
   const animeSelected = event.currentTarget;
@@ -46,7 +45,7 @@ function handleClickFavourite(event) {
   listenerFavs();
 }
 
-//Funcion escuchadora de cada li
+
 
 function listenerAnimes() {
   const selectAllLiAnimes = document.querySelectorAll('.js_eachAnime');
