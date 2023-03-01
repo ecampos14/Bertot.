@@ -1,12 +1,12 @@
-# José Danrley da Silva
+# Emanuele Cristina da Silva Diniz Campos
 
 ## Introdução
 
-Olá, seja bem-vindo. Sou o José Danrley, estudante de Análise e Desenvolvimento de Sistemas pela FATEC Prof. Jessen Vidal. 
+Olá, seja bem-vindo. Sou a Emanuele, estudante de Banco de Dados pela FATEC Prof. Jessen Vidal. 
 
-Tenho 24 anos e trabalho como Desenvolvedor de Software Júnior. <br/>
+Tenho 22 anos e trabalho como Estagiario em QA. <br/>
 
-<img src="https://user-images.githubusercontent.com/45850297/166244768-572c3120-ee71-4aa1-bb82-bcfe3e866063.jpg" height="400" width="300"/>
+<img src="https://user-images.githubusercontent.com/45850297/166244768-572c312d0-ee71-4aa1-bb82-bcfe3e866063.jpg" height="400" width="300"/>
 
 ##### *Figura 00. Eu*
 
@@ -14,9 +14,7 @@ Tenho 24 anos e trabalho como Desenvolvedor de Software Júnior. <br/>
 
 #### Java
 
-Minha atuação como desenvolvedor júnior tem como a principal stack a linguagem Java, na versão 1.8, desde março de 2021.
-Trabalho desenvolvendo API's e serviços com o auxílio do framework Spring Boot e também do framework ORM Hibernate. 
-Por conta desta experiência, Java e seu ecossistema para desenvolvimento web é onde possuo maior domínio e conhecimento. 
+Minha atuação como desenvolvedor nas api tem como a principal stack a linguagem Java, Trabalho desenvolvendo API's e serviços com o auxílio do framework Spring Boot e também do framework ORM Hibernate. Por conta desta experiência. Trabalho utilizando automatização de teste em Java e seu ecossistema para desenvolvimento web é onde possuo maior domínio e conhecimento. 
 
 #### Python
 
