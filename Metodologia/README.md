@@ -24,24 +24,70 @@ IACIT
 
 Um importante polo da indústria aeroespacial brasileira, fundada em 1986, a IACIT é uma empresa brasileira com sede em São José dos Campos - SP. Com capacitação no desenvolvimento de produtos e sistemas aplicados  para o segmento de navegação aérea, com certificação como Empresa Estratégica de Defesa (EED).
 
-<details open>
-<summary> Visão do Projeto </summary>
+## Visão do Projeto
+
 A equipe do [fluffy](https://github.com/fluffyfatec/Iacit) desenvolveu um software web para a empresa Iacit que possibilita a automatização desde o download, o processamento dos dados e a persistência dos dados no banco de dados de forma simplificada dos dados meteorológicos. Além disso, também será possível realizar a filtragem desses dados por temperatura, umidade, estações, vento, pressão atmosférica, radiação global e precipitação, além da diversa visualizações desses dados. Contudo, vamos entregamos também diferentes níveis de usuários juntamente com o painel administrativo possibilitando a exportação dos relatórios a partir dos dados.
 
+#
   
   <p align="center">
       <img src="https://github.com/fluffyfatec/Iacit/blob/Sprint-2/GIT/VID-20221009-WA0013%20(2).gif" width="100%" height="100%">
-<p align="center">
- </details>                                                                                                                                        
+<p align="center">                                                                                                                                     
                                                                                                                                         
 ##### *Figura 01. Fluffy (Fonte: https://github.com/fluffyfatec/Iacit)*
 
-<details open>
-<summary> ## Tecnologias utilizadas: </summary>
 
-![image](https://user-images.githubusercontent.com/54003876/142728799-f87fdad3-06a5-4ff3-9518-5c1f80624bd1.png)
+## Tecnologias Utilizadas
+<details>
+<summary>Front-End</summary>
 
-##### *Figura 08. Tecnologias Typext (Fonte: https://github.com/Typext)*
+* [JavaScript](https://www.javascript.com)
+* [HTML](https://www.w3schools.com/css/)
+* [CSS](https://www.w3schools.com/css/)
+ 
+
+</details>
+
+<details>
+<summary>Back-End</summary>
+
+* [Java](https://www.java.com/pt-BR/?msclkid=7faa842eb8f811ecab39772d4c1ae90b)
+ 
+* [Python](https://www.python.org/downloads/)
+
+* [Spring boot](https://spring.io/projects/spring-boot)
+
+</details>
+
+<details>
+<summary>Banco de Dados</summary>
+
+* [PostgreSQL](https://www.postgresql.org/download/)
+</details>
+<details>
+<summary>Reuniões e Comunicação</summary>
+
+* [Discord](https://discord.com/?msclkid=b4f5af84b8f811ecbd81c127a0ae68a7)
+
+* [Whatsapp](https://www.whatsapp.com/)
+
+* [Slack](https://slack.com/intl/pt-br/?msclkid=c00e628eb8f811ecaef374bb86d7f056)
+</details>
+
+<details>
+<summary>Outras Ferramentas</summary>
+
+* [Github](https://github.com/)
+
+* [Eclipse IDE](https://www.eclipse.org/downloads/)
+
+* [IntelliJ IDE](https://www.jetbrains.com/idea/promo/?msclkid=6ae44e88c2811d86c0ae2cdbd94ffcfb&utm_source=bing&utm_medium=cpc&utm_campaign=AMER_en_BR_IDEA_Branded&utm_term=intellij&utm_content=intellij%20idea)
+
+* [Azure DevOps](https://dev.azure.com/iacitAPI/iacitAPI/)
+
+* [Photoshop](https://www.adobe.com/br/products/photoshop.html?sdid=KQPOM&mv=search&ef_id=d67181c6b224183a4875e395ae54f4bf:G:s&s_kwcid=AL!3085!10!79302406606568!79302288716688&msclkid=d67181c6b224183a4875e395ae54f4bf)
+</details>
+
 
 Assim como no projeto anterior, a aplicação front-end foi construída com a biblioteca React.Js.
 Porém, neste projeto houve uma mudança da stack dos serviços e API do back-end. Apenas Node.Js foi utilizado em sua construção, com a linguagem Typescript.
