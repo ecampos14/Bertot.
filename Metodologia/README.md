@@ -89,29 +89,32 @@ A equipe do [fluffy](https://github.com/fluffyfatec/Iacit) desenvolveu um softwa
 </details>
 
 
-Assim como no projeto anterior, a aplicação front-end foi construída com a biblioteca React.Js.
-Porém, neste projeto houve uma mudança da stack dos serviços e API do back-end. Apenas Node.Js foi utilizado em sua construção, com a linguagem Typescript.
+
+Neste projeto houve a utilização dos serviços do Spring como API do back-end.  foi utilizado em sua construção, no front-end a linguagem Javascript, juntamente com o Ajax.
 Assim foram programadas todas as rotas HTTP, conexão com o banco de dados e manutenção do banco para alterações, por meio de migrations.
 A base de dados utilizada foi mantida, utilizando o PostgreSQL.
 
-#### Contribuições pessoais
 
-Desenvolvimento de features e estruturas do backend da ferramenta. O sistema foi construído em TypeScript, com Node.js. No desenvolvimento deste projeto, diversos desafios foram enfrentados e realizados pelo time do backend. Alguns deles citados abaixo:
+<details>
+<summary>Contribuições pessoais</summary>
+Desenvolvimento de features e estruturas do backend da ferramenta. O sistema foi construído em Java, com Spring. No desenvolvimento deste projeto, diversos desafios foram enfrentados e realizados pelo time do backend. Alguns deles citados abaixo:
 
-- Registro de logs personalizados de ações dos usuários;
+- Registro e consultas dos dados;
 - Atualização de registros complexos como a ata;
-- Disponibilização de documentos em diferentes formatos a partir de entidades na nossa ferramenta;
-- Inclusão de tecnologias de empresas parceiras como o calendário, que permitia agendamento de reuniões.
+- Disponibilização de documentos em diferentes formatos de grafico na nossa ferramenta;
+- Disponibilização de relatorio em todas as telas da aplicação;
+- Criação e recuperação de logs e atualização dos registros de usuários e atas
 
-Atuei em todas estas frentes, criando diferentes rotas e serviços para a implementação de várias features do sistema. Minhas principais contruibuições foram a criação e recuperação de logs e atualização dos registros de usuários e atas.
+Atuei em praticamente todas estas frentes, criando diferentes rotas e serviços para a implementação de várias features do sistema. Minhas principais contruibuições foram nas consultas dos dados e disponibilização de documentos em diferentes formatos de grafico na nossa ferramenta.
+</details>
 
 ## Aprendizados Efetivos HS
 - Desenvolvimento de serviços CRUD: Sei fazer com autonomia; <br/>
-- Desenvolvimento utilizando Typescript: Sei fazer com autonomia; <br/>
+- Desenvolvimento utilizando SpringBoot: Sei fazer com autonomia; <br/>
 - Utilização de ORM's com banco relacional: Sei fazer com autonomia; <br/>
 
 
 ## Contatos:
 
-- [LinkedIn;](https://www.linkedin.com/in/jos%C3%A9-danrley-069827191)
-- [GitHub.](https://github.com/JDanrley) 
+- [LinkedIn;](https://www.linkedin.com/in/emanuele-diniz-campos-b14699181/)
+- [GitHub.](https://github.com/ecampos14) 
