@@ -26,7 +26,7 @@ Um importante polo da indústria aeroespacial brasileira, fundada em 1986, a IAC
 
 ## Visão do Projeto
 
-A equipe do [fluffy](https://github.com/fluffyfatec/Iacit) desenvolveu um software web para a empresa Iacit que possibilita a automatização desde o download, o processamento dos dados e a persistência dos dados no banco de dados de forma simplificada dos dados meteorológicos. Além disso, também será possível realizar a filtragem desses dados por temperatura, umidade, estações, vento, pressão atmosférica, radiação global e precipitação, além da diversa visualizações desses dados. Contudo, vamos entregamos também diferentes níveis de usuários juntamente com o painel administrativo possibilitando a exportação dos relatórios a partir dos dados.
+Foi desenvolvido um software web para a empresa Iacit que possibilita a automatização desde o download, o processamento dos dados e a persistência dos dados no banco de dados de forma simplificada dos dados meteorológicos. Além disso, também será possível realizar a filtragem desses dados por temperatura, umidade, estações, vento, pressão atmosférica, radiação global e precipitação, além da diversa visualizações desses dados. Contudo, fpi desenvolvido tambem níveis de usuários juntamente com o painel administrativo possibilitando a exportação dos relatórios a partir dos dados.
 
 #
   
@@ -95,15 +95,17 @@ Assim foram programadas todas as rotas HTTP, conexão com o banco de dados e man
 A base de dados utilizada foi mantida, utilizando o PostgreSQL.
 
 
-<details>
-<summary>Contribuições pessoais</summary>
-Desenvolvimento de features e estruturas do backend da ferramenta. O sistema foi construído em Java, com Spring. No desenvolvimento deste projeto, diversos desafios foram enfrentados e realizados pelo time do backend. Alguns deles citados abaixo:
 
-- Registro e consultas dos dados;
-- Atualização de registros complexos como a ata;
-- Disponibilização de documentos em diferentes formatos de grafico na nossa ferramenta;
-- Disponibilização de relatorio em todas as telas da aplicação;
-- Criação e recuperação de logs e atualização dos registros de usuários e atas
+## Contribuições pessoais
+Desenvolvimento de features e estruturas do backend da ferramenta. O sistema foi construído em Java, com Spring. No desenvolvimento deste projeto, diversos desafios foram enfrentados e realizados pelo time do backend. 
+
+<details>
+<summary>Atividades Realizadas</summary>
+- Registro e consultas dos dados; <br/>
+- Atualização de registros complexos como a ata; <br/>
+- Disponibilização de documentos em diferentes formatos de grafico na nossa ferramenta; <br/>
+- Disponibilização de relatorio em todas as telas da aplicação; <br/>
+- Criação e recuperação de logs e atualização dos registros de usuários e atas <br/>
 
 Atuei em praticamente todas estas frentes, criando diferentes rotas e serviços para a implementação de várias features do sistema. Minhas principais contruibuições foram nas consultas dos dados e disponibilização de documentos em diferentes formatos de grafico na nossa ferramenta.
 </details>
