@@ -108,22 +108,22 @@ Desenvolvimento de features e estruturas do backend da ferramenta. O sistema foi
  </details>
   
  <details>
- <summary>Atualização de registros complexos como a ata<summary>
+<summary>Atualização de registros complexos como a ata</summary>
   Para atualizar registros complexos, como uma ata, mapeio-os como entidades JPA e uso o Spring Data JPA para atualizá-los. Recupero a entidade, faço as modificações       necessárias e salvo as alterações com o método save().
  </details>  
    
  <details>
- <summary>Disponibilização de documentos em diferentes formatos de grafico na nossa ferramenta<summary>
+<summary>Disponibilização de documentos em diferentes formatos de grafico na nossa ferramenta</summary>
   Utilizo bibliotecas Java, como JFreeChart ou Chart.js, para gerar gráficos em diversos formatos. Integrando esses gráficos à ferramenta, os disponibilizo aos usuários.
  </details>
    
  <details>
- <summary>Disponibilização de relatorio em todas as telas da aplicação<summary>
+ <summary>Disponibilização de relatorio em todas as telas da aplicação</summary>
   Com Thymeleaf, JSP ou bibliotecas de geração de relatórios, como JasperReports ou Apache POI, crio relatórios em PDF, Excel, CSV, entre outros. Esses relatórios são       acessíveis por links ou botões nas telas da aplicação.
  </details>
    
  <details>
- <summary>Criação e recuperação de logs e atualização dos registros de usuários e atas<summary>
+ <summary>Criação e recuperação de logs e atualização dos registros de usuários e atas</summary>
   Uso bibliotecas de logging, como Log4j ou SLF4J, para criar logs com informações relevantes. Com o Spring Data JPA, recupero registros, faço atualizações e salvo as       alterações nos dados do usuário e atas.
  </details>
    
