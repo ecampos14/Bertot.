@@ -133,7 +133,7 @@ Atuei em praticamente todas estas frentes, criando diferentes rotas e serviços 
 
 ## Aprendizados Efetivos HS
 - Desenvolvimento de serviços CRUD: Sei fazer com autonomia; <br/>
-- Desenvolvimento utilizando SpringBoot: Sei fazer com autonomia; <br/>
+- Desenvolvimento ade ApiRest utilizando SpringBoot: Sei fazer com autonomia; <br/>
 - Utilização de ORM's com banco relacional: Sei fazer com autonomia; <br/>
 
 
