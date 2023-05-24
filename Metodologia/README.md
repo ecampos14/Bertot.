@@ -99,8 +99,8 @@ A base de dados utilizada foi mantida, utilizando o PostgreSQL.
 ## Contribuições pessoais
 Desenvolvimento de features e estruturas do backend da ferramenta. O sistema foi construído em Java, com Spring. No desenvolvimento deste projeto, diversos desafios foram enfrentados e realizados pelo time do backend. 
 
-<details>
-<summary>Atividades Realizadas</summary>
+
+## Atividades Realizadas
   
  <details>
 <summary>Registro e consultas dos dados</summary>
@@ -129,7 +129,6 @@ Desenvolvimento de features e estruturas do backend da ferramenta. O sistema foi
    
    
 Atuei em praticamente todas estas frentes, criando diferentes rotas e serviços para a implementação de várias features do sistema. Minhas principais contruibuições foram nas consultas dos dados e disponibilização de documentos em diferentes formatos de grafico na nossa ferramenta.
-</details>
 
 ## Aprendizados Efetivos HS
 - Desenvolvimento de serviços CRUD: Sei fazer com autonomia; <br/>
