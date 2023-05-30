@@ -104,27 +104,116 @@ Desenvolvimento de features e estruturas do backend da ferramenta. O sistema foi
   
  <details>
 <summary>Registro e consultas dos dados</summary>
-  No Java com Spring, uso o Spring Data JPA para registrar e consultar dados. Ele oferece interfaces de repositório que estendem JpaRepository, proporcionando métodos       prontos para operações de dados.
+  No Java com Spring, uso o Spring Data JPA para registrar e consultar dados. Ele oferece interfaces de repositório que estendem JpaRepository, proporcionando métodos prontos para operações de dados.
+   
+ <pre><code> @Repository
+public interface EstacaoRepository extends JpaRepository<EstacaoModal, String> {
+	@Query("SELECT u FROM estacao u WHERE u.codWmo = :codWmo")
+	public List<EstacaoModal> listar(@Param("codWmo") String codWmo);
+  
+	@Query(value = "SELECT * FROM estacao", nativeQuery = true)
+	
+	List<EstacaoModal> listarAllEstacoes();
+	EstacaoModal findByEstacaoNome(String estacaoNome); 
+ }
+</code></pre>
  </details>
   
  <details>
-<summary>Atualização de registros complexos como a ata</summary>
-  Para atualizar registros complexos, como uma ata, mapeio-os como entidades JPA e uso o Spring Data JPA para atualizá-los. Recupero a entidade, faço as modificações       necessárias e salvo as alterações com o método save().
+<summary>Atualização de registros complexos como o Usuario</summary>
+  Para atualizar registros complexos, como um usuario, mapeio-os como entidades JPA e uso o Spring Data JPA para atualizá-los. Recupero a entidade, faço as modificações necessárias e salvo as alterações com o método save().
+  <pre><code>
+  public ModelAndView execute(UsuarioRequestDTO data) {
+    ModelAndView modelAndView = new ModelAndView();
+    UsuarioModal userAdmin = usuarioRepository.findByUsuarioUsername(data.getUsuario_nome_adm());   
+    PermissaoModal permissao = permissaoRepository.findByPermissaoNome(data.getNome_permissao());
+    UsuarioModal user = usuarioRepository.findByUsuarioUsername(data.getUsuario_username());
+    BCryptPasswordEncoder encode = new BCryptPasswordEncoder();
+
+    String senhaEncriptografada = encode.encode(data.getUsuario_senha());
+
+    user.setCodPermissao(permissao);
+    user.setUsuarioCadastrante(userAdmin);
+    user.setUsuarioNome(data.getUsuario_nome());
+    user.setUsuarioSenha(senhaEncriptografada);
+    user.setUsuarioUsername(data.getUsuario_username());
+    user.setUsuarioAlterou(userAdmin);
+
+    user = usuarioRepository.save(user); 
+
+    modelAndView.addObject("user", user);
+    modelAndView.setViewName("HfefCadUsuario");
+    return modelAndView;
+}
+</code></pre>
  </details>  
    
  <details>
 <summary>Disponibilização de documentos em diferentes formatos de grafico na nossa ferramenta</summary>
-  Utilizo bibliotecas Java, como JFreeChart ou Chart.js, para gerar gráficos em diversos formatos. Integrando esses gráficos à ferramenta, os disponibilizo aos usuários.
+  Utilizo bibliotecas Java, como Chart.js, para gerar gráficos em diversos formatos. Integrando esses gráficos à ferramenta, os disponibilizo aos usuários.
+  <pre><code>   
+const ctx1 = document.getElementById('graficoUmidade1').getContext('2d');
+const myChart1 = new Chart(ctx1, {
+type: 'line',            
+data: {
+    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+    datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3],
+        backgroundColor: [
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 206, 86, 0.2)',
+            'rgba(75, 192, 192, 0.2)',
+            'rgba(153, 102, 255, 0.2)',
+            'rgba(255, 159, 64, 0.2)'
+        ],
+        </code></pre>
  </details>
-   
  <details>
  <summary>Disponibilização de relatorio em todas as telas da aplicação</summary>
-  Com Thymeleaf, JSP ou bibliotecas de geração de relatórios, como JasperReports ou Apache POI, crio relatórios em PDF, Excel, CSV, entre outros. Esses relatórios são       acessíveis por links ou botões nas telas da aplicação.
+  Com Thymeleaf, JSP ou bibliotecas de geração de relatórios, como JasperReports ou Apache POI, crio relatórios em PDF, Excel, CSV, entre outros. Esses relatórios são acessíveis por links ou botões nas telas da aplicação.
+<pre><code>
+    public static ByteArrayInputStream exportarPdfPrecipitacao (List<ViewPrecipitacaoModal> viewPrecipitacaoModals) throws IOException {
+
+        //Criando o documento PDF
+        Document document = new Document(PageSize.A4.rotate(), 25, 25, 25, 25);
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+
+        try {
+
+            //Criando a tabela para o relatório
+            PdfPTable table = new PdfPTable(2);
+            table.setWidthPercentage(100);
+            table.setWidths(new int[] { 4, 4});
+
+            //Criando o cabeçalho da tabela
+            Font headFont = FontFactory.getFont(FontFactory.HELVETICA_BOLD, 14, BaseColor.WHITE);
+
+            PdfPCell hcell;
+ </code></pre>
  </details>
    
  <details>
  <summary>Criação e recuperação de logs e atualização dos registros de usuários e atas</summary>
   Uso bibliotecas de logging, como Log4j ou SLF4J, para criar logs com informações relevantes. Com o Spring Data JPA, recupero registros, faço atualizações e salvo as       alterações nos dados do usuário e atas.
+<pre><code>
+@Service
+public class LogService {
+
+	    @Autowired 
+	    LogRepository logrep;
+
+	    public ModelAndView listar(LogUsuarioDTO logusuario) {
+	    	ModelAndView  moden= new ModelAndView();
+	    	LogUsuarioModal logAtiva = logrep.findByLogCodUsuario(logusuario.getLogCodUsuario());
+	 
+	        moden.addObject("estacaoAtiva", logAtiva);
+	 		moden.setViewName("UsuarioUpEst");
+	 		
+	 		return moden;
+	    }
+ </code></pre>
  </details>
    
    
@@ -132,7 +221,8 @@ Atuei em praticamente todas estas frentes, criando diferentes rotas e serviços 
 
 ## Aprendizados Efetivos HS
 - Desenvolvimento de serviços CRUD: Sei fazer com autonomia; <br/>
-- Desenvolvimento ade ApiRest utilizando SpringBoot: Sei fazer com autonomia; <br/>
+- Desenvolvimento de ApiRest utilizando SpringBoot: Sei fazer com autonomia; <br/>
+- Desenvolvimento de graficos para aplicação usando Chart.js: Sei fazer com autonomia; <br/>
 - Utilização de ORM's com banco relacional: Sei fazer com autonomia; <br/>
 
 
