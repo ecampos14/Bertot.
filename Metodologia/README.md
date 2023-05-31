@@ -6,7 +6,6 @@ Olá, seja bem-vindo. Sou a Emanuele, estudante de Banco de Dados pela FATEC Pro
 
 Tenho 22 anos e trabalho como Estagiario em QA. <br/>
 
-
 ### Meus principais conhecimentos
 
 #### Java
