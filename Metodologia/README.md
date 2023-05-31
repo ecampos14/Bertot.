@@ -98,14 +98,10 @@ A base de dados utilizada foi mantida, utilizando o PostgreSQL.
 
 ## Contribuições pessoais
 Desenvolvimento de features e estruturas do backend da ferramenta. O sistema foi construído em Java, com Spring. No desenvolvimento deste projeto, diversos desafios foram enfrentados e realizados pelo time do backend. 
-
-
-## Atividades Realizadas
   
  <details>
 <summary>Registro e consultas dos dados</summary>
-  No Java com Spring, uso o Spring Data JPA para registrar e consultar dados. Ele oferece interfaces de repositório que estendem JpaRepository, proporcionando métodos prontos para operações de dados.
-   
+  No Java com Spring, uso o Spring Data JPA para registrar e consultar dados. Ele oferece interfaces de repositório que estendem JpaRepository, proporcionando métodos prontos para operações de dados. <hr>
  <pre><code> @Repository
 public interface EstacaoRepository extends JpaRepository<EstacaoModal, String> {
 	@Query("SELECT u FROM estacao u WHERE u.codWmo = :codWmo")
@@ -117,6 +113,10 @@ public interface EstacaoRepository extends JpaRepository<EstacaoModal, String> {
 	EstacaoModal findByEstacaoNome(String estacaoNome); 
  }
 </code></pre>
+<body>
+  <h5>A interface "EstacaoRepository" é uma extensão da classe "JpaRepository" que fornece métodos para operações básicas de persistência de dados. Ela possui consultas personalizadas usando a anotação "@Query" do Spring Data JPA para selecionar instâncias da entidade "estacao" com base em critérios específicos, como o valor do atributo "codWmo" e o nome da estação. Além disso, há um método para listar todas as estações na tabela "estacao" usando uma consulta SQL nativa. No geral, essa interface facilita o acesso e a manipulação de dados relacionados às estações.</h5>
+</body>
+
  </details>
   
  <details>
@@ -146,6 +146,9 @@ public interface EstacaoRepository extends JpaRepository<EstacaoModal, String> {
     return modelAndView;
 }
 </code></pre>
+<body>
+  <h5>Este código trata de uma operação de atualização de usuário no sistema. Ele recebe um objeto `UsuarioRequestDTO` contendo os dados atualizados do usuário e utiliza os repositórios para buscar os objetos relacionados. A senha é criptografada, as propriedades do usuário são atualizadas com os dados do DTO e o objeto `user` é salvo novamente no repositório. Em seguida, um objeto `ModelAndView` é configurado com o usuário atualizado e retornado para a view "HfefCadUsuario", indicando que a atualização foi realizada com sucesso.</h5>
+</body>
  </details>  
    
  <details>
@@ -169,6 +172,9 @@ data: {
             'rgba(255, 159, 64, 0.2)'
         ],
         </code></pre>
+<body>
+  <h5>Este código utiliza a biblioteca Chart.js para criar um gráfico de linha em um elemento de um documento HTML. O gráfico exibe dados de um conjunto de votos representados por rótulos e valores. Cada rótulo representa uma categoria e cada valor representa a quantidade de votos correspondente. A cor de fundo das barras do gráfico é definida usando a propriedade `backgroundColor`. Essa configuração permite visualizar os dados de forma mais intuitiva, identificando diferentes categorias por meio das cores. No exemplo fornecido, são exibidas seis categorias com suas respectivas quantidades de votos.</h5>
+</body>
  </details>
  <details>
  <summary>Disponibilização de relatorio em todas as telas da aplicação</summary>
@@ -192,6 +198,11 @@ data: {
 
             PdfPCell hcell;
  </code></pre>
+ 
+<body>
+  <h5>Neste código, é criado um documento PDF usando a biblioteca iText para Java. O documento é configurado com o tamanho da página A4 no formato paisagem (rotacionado) e são definidas as margens. Em seguida, é criada uma tabela para o relatório usando a classe `PdfPTable`, com duas colunas. O cabeçalho da tabela é definido com a fonte `HELVETICA_BOLD` e tamanho 14. Um objeto `PdfPCell` é criado para armazenar cada célula da tabela.</h5>
+</body>
+
  </details>
    
  <details>
@@ -213,8 +224,12 @@ public class LogService {
 	 		
 	 		return moden;
 	    }
- </code></pre>
- </details>
+</code></pre>
+
+<body>
+  <h5>Esta classe `LogService` é um serviço Spring responsável por lidar com operações relacionadas a logs de usuários. No método `listar`, é injetado o repositório `LogRepository` por meio da anotação `@Autowired` para buscar informações do log do usuário. Em seguida, é criado um objeto `ModelAndView` para retornar os dados do log de usuário para a view "UsuarioUpEst". O objeto `logAtiva` é obtido do repositório com base no código do usuário fornecido no DTO `logusuario`. Esse objeto é adicionado ao `ModelAndView` e, em seguida, retornado para a view.</h5>
+</body>
+</details>
    
    
 Atuei em praticamente todas estas frentes, criando diferentes rotas e serviços para a implementação de várias features do sistema. Minhas principais contruibuições foram nas consultas dos dados e disponibilização de documentos em diferentes formatos de grafico na nossa ferramenta.
