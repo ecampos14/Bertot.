@@ -113,7 +113,7 @@ public interface EstacaoRepository extends JpaRepository<EstacaoModal, String> {
  }
 </code></pre>
 <body>
-  <h5>A interface "EstacaoRepository" é uma extensão da classe "JpaRepository" que fornece métodos para operações básicas de persistência de dados. Ela possui consultas personalizadas usando a anotação "@Query" do Spring Data JPA para selecionar instâncias da entidade "estacao" com base em critérios específicos, como o valor do atributo "codWmo" e o nome da estação. Além disso, há um método para listar todas as estações na tabela "estacao" usando uma consulta SQL nativa. No geral, essa interface facilita o acesso e a manipulação de dados relacionados às estações.</h5>
+  <h5>A interface "EstacaoRepository" é uma extensão da classe "JpaRepository" que fornece métodos para operações básicas de persistência de dados. Eu implementei consultas personalizadas usando a anotação "@Query" do Spring Data JPA para selecionar instâncias da entidade "estacao" com base em critérios específicos, como o valor do atributo "codWmo" e o nome da estação. Também adicionei um método para listar todas as estações na tabela "estacao" usando uma consulta SQL nativa. No geral, essa interface me ajudou a facilitar o acesso e a manipulação de dados relacionados às estações.</h5>
 </body>
 
  </details>
@@ -146,7 +146,7 @@ public interface EstacaoRepository extends JpaRepository<EstacaoModal, String> {
 }
 </code></pre>
 <body>
-  <h5>Este código trata de uma operação de atualização de usuário no sistema. Ele recebe um objeto `UsuarioRequestDTO` contendo os dados atualizados do usuário e utiliza os repositórios para buscar os objetos relacionados. A senha é criptografada, as propriedades do usuário são atualizadas com os dados do DTO e o objeto `user` é salvo novamente no repositório. Em seguida, um objeto `ModelAndView` é configurado com o usuário atualizado e retornado para a view "HfefCadUsuario", indicando que a atualização foi realizada com sucesso.</h5>
+  <h5>Neste código, trato de uma operação de atualização de usuário no sistema. Recebo um objeto `UsuarioRequestDTO` contendo os dados atualizados do usuário e utilizo os repositórios para buscar os objetos relacionados. Em seguida, criptografo a senha fornecida pelo usuário. Atualizo as propriedades do usuário com os dados do DTO e salvo o objeto `user` novamente no repositório. Por fim, configuro um objeto `ModelAndView` com o usuário atualizado e o retorno para a view "HfefCadUsuario", indicando que a atualização foi realizada com sucesso.</h5>
 </body>
  </details>  
    
@@ -172,7 +172,7 @@ data: {
         ],
         </code></pre>
 <body>
-  <h5>Este código utiliza a biblioteca Chart.js para criar um gráfico de linha em um elemento de um documento HTML. O gráfico exibe dados de um conjunto de votos representados por rótulos e valores. Cada rótulo representa uma categoria e cada valor representa a quantidade de votos correspondente. A cor de fundo das barras do gráfico é definida usando a propriedade `backgroundColor`. Essa configuração permite visualizar os dados de forma mais intuitiva, identificando diferentes categorias por meio das cores. No exemplo fornecido, são exibidas seis categorias com suas respectivas quantidades de votos.</h5>
+  <h5>Neste código, eu utilizei a biblioteca Chart.js para criar um gráfico de linha em um elemento do meu documento HTML. O objetivo era exibir dados de um conjunto de votos, onde cada voto é representado por rótulos e valores. Cada rótulo representa uma categoria e cada valor representa a quantidade de votos correspondente a essa categoria. Para tornar a visualização mais intuitiva, defini a cor de fundo das barras do gráfico utilizando a propriedade `backgroundColor`. Essa configuração me permitiu visualizar os dados de forma mais clara, identificando facilmente as diferentes categorias através das cores. No exemplo que eu forneci, pude exibir seis categorias distintas juntamente com as suas respectivas quantidades de votos.</h5>
 </body>
  </details>
  <details>
@@ -199,7 +199,7 @@ data: {
  </code></pre>
  
 <body>
-  <h5>Neste código, é criado um documento PDF usando a biblioteca iText para Java. O documento é configurado com o tamanho da página A4 no formato paisagem (rotacionado) e são definidas as margens. Em seguida, é criada uma tabela para o relatório usando a classe `PdfPTable`, com duas colunas. O cabeçalho da tabela é definido com a fonte `HELVETICA_BOLD` e tamanho 14. Um objeto `PdfPCell` é criado para armazenar cada célula da tabela.</h5>
+  <h5>Neste código, foi criado um documento PDF usando a biblioteca iText para Java. O documento é configurado com o tamanho da página A4 no formato paisagem (rotacionado) e são definidas as margens. Em seguida, foi criada uma tabela para o relatório usando a classe `PdfPTable`, com duas colunas. O cabeçalho da tabela é definido com a fonte `HELVETICA_BOLD` e tamanho 14. Um objeto `PdfPCell` é criado para armazenar cada célula da tabela.</h5>
 </body>
 
  </details>
@@ -226,7 +226,8 @@ public class LogService {
 </code></pre>
 
 <body>
-  <h5>Esta classe `LogService` é um serviço Spring responsável por lidar com operações relacionadas a logs de usuários. No método `listar`, é injetado o repositório `LogRepository` por meio da anotação `@Autowired` para buscar informações do log do usuário. Em seguida, é criado um objeto `ModelAndView` para retornar os dados do log de usuário para a view "UsuarioUpEst". O objeto `logAtiva` é obtido do repositório com base no código do usuário fornecido no DTO `logusuario`. Esse objeto é adicionado ao `ModelAndView` e, em seguida, retornado para a view.</h5>
+  <h5>Nesta classe, o `LogService`, eu criei um serviço no Spring responsável por lidar com operações relacionadas a logs de usuários. No método `listar`, eu utilizei a anotação `@Autowired` para injetar o repositório `LogRepository` e buscar informações do log do usuário. Em seguida, criei um objeto `ModelAndView` para retornar os dados do log de usuário para a view "UsuarioUpEst". Para isso, obtive o objeto `logAtiva` do repositório com base no código do usuário fornecido no DTO `logusuario`. Adicionei esse objeto ao `ModelAndView` e o retornei para a view.
+</h5>
 </body>
 </details>
    
